@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/myDB</property>
+        <property name="hibernate.connection.username">owaissalam</property>
+        <property name="hibernate.connection.password">0089</property>
+        
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <mapping class="com.owaissalam.Hibernate.entities.Student"></mapping>
+        <!-- <mapping class="com.owaissalam.Hibernate.entities.Certificate"></mapping>
+         -->
+    </session-factory>
+</hibernate-configuration>
