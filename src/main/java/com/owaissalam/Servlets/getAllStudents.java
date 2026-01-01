@@ -35,7 +35,7 @@ public class getAllStudents extends HttpServlet{
 		writer.print("<ul>");
 
 		for (Student s : students) {
-		    writer.print("<li>" + s + " </li>");
+		    writer.print("<li><h2>" + s + "</h2></li>");
 		}
 
 		writer.print("</ul>");

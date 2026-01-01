@@ -10,7 +10,7 @@
     <h1>Student Management System</h1>
 
     <a href="addStudent.jsp">Add Student</a>
-    <a href="getStudent.jsp">Get Student By ID</a>
+    <a href="getStudent.jsp">Get Student</a>
     <a href="<%=application.getContextPath() %>/getAllStudents">View All Students</a>
 </div>
 

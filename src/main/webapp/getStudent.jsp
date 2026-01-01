@@ -7,10 +7,10 @@
 <body>
 
 <div class="container">
-    <h2>Get Student By ID</h2>
+    <h2>Get Student</h2>
 
     <form action="<%=application.getContextPath() %>/getStudent" method="get">
-        <label>Student ID</label>
+        <label>Enter student ID : </label>
         <input type="number" name="id" required>
 
         <button type="submit">Find Student</button>
