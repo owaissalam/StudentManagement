@@ -25,19 +25,21 @@ public class getAllStudents extends HttpServlet{
 		//Get all students from DB
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		List<Student> students = new ArrayList<Student>();
-		students = session.createQuery("from student", Student.class).getResultList();
+		students = session.createQuery("from Student", Student.class).getResultList();
 		session.close();
 		
 		//Show all students to client
-		//resp.setContentType("text/html");
-		
-		req.setAttribute("students", students);
+		resp.setContentType("text/html");
+		PrintWriter writer = resp.getWriter();
+		writer.print("<h1>Students List</h1>");
+		writer.print("<ul>");
 
-        //forward to JSP
-        RequestDispatcher rd =
-                req.getRequestDispatcher("getAllStudents.jsp");
-        rd.forward(req, resp);
-		
+		for (Student s : students) {
+		    writer.print("<li>" + s + " </li>");
+		}
+
+		writer.print("</ul>");
+			
 	}
 
 }

@@ -35,6 +35,4 @@ public class getStudent extends HttpServlet{
 				<h1>age : %s</h1>
 				""".formatted(id, student.getName(), student.getEmail(), student.getAge() ));
 	}
-
-	
 }

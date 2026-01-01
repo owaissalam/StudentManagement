@@ -11,7 +11,7 @@
 
     <a href="addStudent.jsp">Add Student</a>
     <a href="getStudent.jsp">Get Student By ID</a>
-    <a href="getAllStudents.jsp">View All Students</a>
+    <a href="<%=application.getContextPath() %>/getAllStudents">View All Students</a>
 </div>
 
 </body>
